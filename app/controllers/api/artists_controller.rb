@@ -22,7 +22,7 @@ class Api::ArtistsController < ApplicationController
   end
 
   def destroy
-    @artist = Artist.find(params[:ide])
+    @artist = Artist.find(params[:id])
     @artist.destroy
     redirect_to api_artists_path
   end
