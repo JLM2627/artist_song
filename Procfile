@@ -1,1 +1,1 @@
-web: rails sgi
+web: rails s
