@@ -2,6 +2,7 @@ class Api::ArtistsController < ApplicationController
   def index
     @artists = Artist.all
     render json: @artists
+   
   end
 
   def create
@@ -21,7 +22,7 @@ class Api::ArtistsController < ApplicationController
   end
 
   def destroy
-    @artist = Artist.find(params[:id])
+    @artist = Artist.find(params[:ide])
     @artist.destroy
     redirect_to api_artists_path
   end
